@@ -1,8 +1,8 @@
 {
-  "name": "react-boilerplate",
+  "name": "new-portfolio",
   "version": "1.0.0",
-  "description": "Boilerplate configuration for React projects",
-  "homepage": "http://www.inescoelho.info/react-boilerplate/",
+  "description": "",
+  "homepage": "http://www.inescoelho.info/new-portfolio/",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inescoelho/react-boilerplate.git"
+    "url": "git+https://github.com/inescoelho/new-portfolio.git"
   },
   "keywords": [],
   "author": "Ines Coelho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inescoelho/react-boilerplate/issues"
+    "url": "https://github.com/inescoelho/new-portfolio/issues"
   },
   "dependencies": {
     "@types/jest": "^24.0.15",
