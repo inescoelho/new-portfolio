@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from 'semantic-ui-react'
+
+import App from './App';
 
 import 'semantic-ui-css/semantic.min.css'
-import './index.less';
 
-ReactDOM.render(<Button primary>Primary</Button>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
