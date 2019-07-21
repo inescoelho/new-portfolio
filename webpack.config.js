@@ -24,14 +24,9 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader']
       },
-      {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'less-loader',
-        ],
-      },
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] },
+      { test: /\.lcss$/, use: ['style-loader', { loader: 'css-loader', options: { modules: true } }] },
       { test: /\.(gif|jpe?g|png|ttf|woff2?|eot|svg)$/, use: [{ loader: 'url-loader', options: { limit: 10000 } }] }
     ]
   },
