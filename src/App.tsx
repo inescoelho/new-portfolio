@@ -2,11 +2,13 @@ import React from 'react';
 
 import './App.less';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+export default class App extends React.Component{
+  render() {
 
-export default App;
+    return (
+      <div className="app">
+      </div>
+    );
+  }
+}
+;
