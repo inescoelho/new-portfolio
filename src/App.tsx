@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Menu } from 'components/Menu';
+import { Content } from 'components/Content';
 
 import './App.less';
 
@@ -25,6 +26,9 @@ export default class App extends React.Component{
         <Menu
           activeItem={activeItem}
           handleItemClick={this.handleItemClick} />
+        <div className="content">
+          <Content activeItem={this.state.activeItem} />
+        </div>
       </div>
     );
   }
