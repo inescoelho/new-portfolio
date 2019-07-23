@@ -4,5 +4,5 @@
     "@babel/preset-react",
     "@babel/typescript"
   ],
-  "plugins": ["transform-class-properties"] 
+  "plugins": ["transform-class-properties", "transform-react-jsx-img-import"]
 }
