@@ -1,12 +1,17 @@
 import React from 'react';
 
+import { menuOptions } from "App";
+import { Home } from 'components/Home';
+
 interface Props {
   activeItem: string;
 }
 
 export const Content: React.FC<Props> = ({ activeItem }) =>
   <>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est elementum, viverra velit sed, posuere erat. Etiam molestie pretium justo. Duis euismod, dolor at bibendum pretium, velit urna elementum enim, in placerat quam ante sed ante. Mauris nec purus nec augue semper ornare vitae a sapien. Maecenas ut commodo diam, id finibus neque. Integer aliquet lorem eget eros interdum tincidunt. In vel tortor ut lacus commodo tincidunt.
+    {activeItem === menuOptions.home && <Home />}
+    {activeItem === menuOptions.talks && <>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est elementum, viverra velit sed, posuere erat. Etiam molestie pretium justo. Duis euismod, dolor at bibendum pretium, velit urna elementum enim, in placerat quam ante sed ante. Mauris nec purus nec augue semper ornare vitae a sapien. Maecenas ut commodo diam, id finibus neque. Integer aliquet lorem eget eros interdum tincidunt. In vel tortor ut lacus commodo tincidunt.
 
 Morbi cursus ultricies est ac sagittis. Integer fermentum hendrerit orci quis accumsan. Praesent id gravida ligula, ac accumsan erat. Ut at dolor vel nisl porttitor dapibus. Nullam scelerisque dictum sem, eget placerat libero faucibus sed. Vestibulum tristique posuere nibh, ac euismod nibh faucibus eget. In posuere nibh iaculis diam vulputate, quis dictum metus luctus. Cras libero nibh, placerat eu risus ac, fringilla mollis leo.
 
@@ -35,4 +40,5 @@ Praesent sagittis, urna non tristique facilisis, dolor ligula vestibulum eros, s
 Sed at tincidunt lacus. Nulla semper eleifend erat, ut bibendum diam iaculis vitae. Pellentesque vitae condimentum urna. Nam fringilla magna purus, id vulputate velit facilisis eget. Quisque eu lectus a orci faucibus molestie et et turpis. Curabitur fringilla velit mollis ante hendrerit dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur quam est, viverra at metus eu, placerat luctus sem. Fusce pharetra nisi consectetur ex sodales, id dignissim orci sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ac purus mollis odio lacinia euismod nec in urna. Nunc sit amet sem in nulla malesuada porttitor. Nullam suscipit eros interdum massa lobortis ullamcorper. Sed convallis pretium eleifend. Vestibulum mattis consectetur eros, ut venenatis sem ornare vel.
 
 Maecenas a tempus ligula, in rutrum nisl. Proin ut odio urna. In aliquet, enim sed viverra consequat, velit mauris finibus purus, at volutpat ligula purus vel nisl. Suspendisse suscipit, enim id tempor tristique, diam lorem ullamcorper sem, eget posuere urna ligula ac purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ornare nunc urna, eget consequat libero luctus a. Pellentesque eleifend lacinia congue. Etiam vitae urna molestie, volutpat tortor in, rutrum nulla. Sed eu enim imperdiet, aliquam ante vel, volutpat elit. Aenean fringilla consectetur nunc, at aliquam orci. Sed nec rhoncus sem. Pellentesque vulputate eros sit amet ligula aliquet, quis gravida ipsum blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    </>}
   </>
