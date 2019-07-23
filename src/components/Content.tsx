@@ -2,6 +2,7 @@ import React from 'react';
 
 import { menuOptions } from "App";
 import { Home } from 'components/Home';
+import { About } from 'components/About';
 
 interface Props {
   activeItem: string;
@@ -10,6 +11,7 @@ interface Props {
 export const Content: React.FC<Props> = ({ activeItem }) =>
   <>
     {activeItem === menuOptions.home && <Home />}
+    {activeItem === menuOptions.about && <About />}
     {activeItem === menuOptions.talks && <>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est elementum, viverra velit sed, posuere erat. Etiam molestie pretium justo. Duis euismod, dolor at bibendum pretium, velit urna elementum enim, in placerat quam ante sed ante. Mauris nec purus nec augue semper ornare vitae a sapien. Maecenas ut commodo diam, id finibus neque. Integer aliquet lorem eget eros interdum tincidunt. In vel tortor ut lacus commodo tincidunt.
 
