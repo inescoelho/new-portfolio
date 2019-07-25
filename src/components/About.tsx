@@ -13,7 +13,7 @@ export const About: React.FC = () =>
         <p>I’m a book lover, occasional writer and runner. I love furry animals and, for eight years, I've slaved to these cute guinea pigs. The first time I’ve played Dungeons & Dragons, my character unleashed a plague that destroyed an entire continent. But don’t worry, now I only occasionally destroy a city. Some time ago, I was featured on CNN, alongside Carrie Fisher (scroll down a bit and you'll find me :P). By the way, Han shot first. And Firefly should be watched in the correct order.</p>
       </Grid.Column>
       <Grid.Column width={6}>
-        <img src="resources/profile.jpg" />
+        <img src="resources/profile.jpg" className="center" />
       </Grid.Column>
     </Grid>
   </Segment>
