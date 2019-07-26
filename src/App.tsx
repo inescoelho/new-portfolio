@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Menu } from 'components/Menu';
 import { Content } from 'components/Content';
+import { Contacts } from 'components/Contacts';
 
 import './App.less';
 
@@ -29,6 +30,7 @@ export default class App extends React.Component{
         <div className="content">
           <Content activeItem={this.state.activeItem} />
         </div>
+        <Contacts />
       </div>
     );
   }
